@@ -1,11 +1,28 @@
-body {}
-
-.image_slide {
-    margin-top: 100px;
+body,
+html {
+    background: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
+    margin: 0;
 }
 
-.card-content {
-    margin-top: 100px;
+.text-gradient {
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-in-card {
+    font-size: 3vw;
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero {
+    background-image: url(image/tbrender.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .column {
@@ -137,4 +154,29 @@ body {}
 .reveal.REactive {
     transform: translateY(0);
     opacity: 1;
+}
+
+.card-zoom {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: -6px 5px 46px rgba(0, 0, 0, 0.3);
+}
+
+.card-zoom-image {
+    width: 100%;
+    height: 100%;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-zoom:hover .card-zoom-image {
+    transform: scale(1.1);
+}
+
+.contect {
+    background-color: black;
 }
