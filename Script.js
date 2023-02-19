@@ -46,6 +46,25 @@ function showSlides(n) {
     setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
+function showmenu() {
+    console.log("sdsdsdsdsds");
+    let myworktext = document.getElementById("mywork");
+    myworktext.innerHTML = "MY WORK"
+}
+
+function cancleShowMenu() {
+    let myworktext = document.getElementById("mywork");
+    myworktext.innerHTML = "."
+}
 
 
 window.addEventListener("scroll", reveal);
+
+function scrollOnReveal() {
+    var reveals = document.querySelector(".reveal");
+    var elementTop = reveals.getBoundingClientRect().top;
+    var elementVisible = 160;
+    window.scrollTo(0, elementTop - elementVisible);
+
+
+}

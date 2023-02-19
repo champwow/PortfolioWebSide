@@ -4,6 +4,25 @@ html {
     margin: 0;
 }
 
+.menu-bar {
+    width: 3vw;
+    height: 100vh;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    transition-duration: 500ms;
+    opacity: 0.5;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    text-align: center;
+}
+
+.menu-bar:hover {
+    background-color: black;
+    width: 15vw;
+}
+
 .text-gradient {
     background: linear-gradient(to right, #30CFD0, #c43ad6);
     -webkit-background-clip: text;
@@ -37,7 +56,7 @@ html {
 /* Slideshow container */
 
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 90vw;
     position: relative;
     margin: auto;
 }
