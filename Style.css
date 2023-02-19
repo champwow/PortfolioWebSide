@@ -2,6 +2,7 @@ body,
 html {
     background: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
     margin: 0;
+    transition-duration: 500ms;
 }
 
 .menu-bar {
@@ -67,7 +68,14 @@ html {
 .mySlides {
     display: none;
 }
-
+#mywork{
+   
+}
+.MenuSelector{
+    color: #ffffff;
+    font-size: 1vw;
+    transition-duration: 500ms;
+}
 
 /* Next & previous buttons */
 

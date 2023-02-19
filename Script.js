@@ -14,7 +14,18 @@ function currentSlide(n) {
 
 
 function reveal() {
+    
     var reveals = document.querySelectorAll(".reveal");
+    var textMywork = document.getElementById("mywork");
+
+    // var Intro = document.querySelector("hero");
+    // var textIntro = document.getElementById("Intro");
+    // var IntroelementTop = Intro.getBoundingClientRect().top;
+    // if (IntroelementTop < windowHeight - 150){
+    //     textIntro.style.color = "#30CFD0";
+    //     textIntro.style.fontSize = "1.5vw"
+    // }
+
 
     for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
@@ -23,8 +34,13 @@ function reveal() {
 
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("REactive");
+            textMywork.style.color = "#30CFD0";
+            textMywork.style.fontSize = "1.5vw"
+
         } else {
             reveals[i].classList.remove("REactive");
+            textMywork.style.color = "#ffffff";
+            textMywork.style.fontSize = "1vw"
         }
     }
 }
