@@ -25,7 +25,12 @@ html {
 }
 
 .text-gradient {
-    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    background: linear-gradient(to right, #5ec5c5, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-gradient-aboutme{
+    background: linear-gradient(to right, #58afaf, #bd8bc4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -45,8 +50,12 @@ html {
     background-size: cover;
 }
 
-.column {
+.card-model{
     text-align: center;
+}
+.image-profile{
+    width: 25vw;
+    box-shadow: -6px 5px 46px rgba(0, 0, 0, 0.8);
 }
 
 * {
@@ -57,9 +66,13 @@ html {
 /* Slideshow container */
 
 .slideshow-container {
-    max-width: 90vw;
+
     position: relative;
     margin: auto;
+}
+.text-title-name{
+    font-size: 5vw;
+    margin-top:  -180px;
 }
 
 
@@ -172,6 +185,7 @@ html {
 }
 
 .reveal {
+    /* margin-top: 10vh; */
     position: relative;
     transform: translateY(150px);
     opacity: 0;
@@ -179,6 +193,18 @@ html {
 }
 
 .reveal.REactive {
+    transform: translateY(0);
+    opacity: 1;
+}
+.reveal-aboutMe {
+    margin-top: 10vh;
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal-aboutMe.REactive {
     transform: translateY(0);
     opacity: 1;
 }
@@ -204,6 +230,30 @@ html {
     transform: scale(1.1);
 }
 
-.contect {
-    background-color: black;
+
+
+
+.ResumeButton {
+	box-shadow: -6px 5px 46px rgba(0, 0, 0, 0.3);
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:7px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:2vw;
+	padding:13px 56px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
 }
+.ResumeButton:hover {
+	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	background-color:#415989;
+}
+.ResumeButton:active {
+	position:relative;
+	top:1px;
+}
+
+        
