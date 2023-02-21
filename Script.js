@@ -145,3 +145,17 @@ function scrollOnAboutMe() {
 
 
 }
+
+function sendEmail() {
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "sukawit1909@gmail.com",
+        Password : "18C7F859CB79A83FD8E2FEE560577E06419C",
+        To : 'sukawit1909@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+    }

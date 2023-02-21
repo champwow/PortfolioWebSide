@@ -17,7 +17,7 @@
         <a class="MenuSelector" id="mywork" onclick="scrollOnReveal()">.</a><br><br>
         <a class="MenuSelector" id="Contect" onclick="scrollOnReveal()">.</a>
     </div>
-    <section id="hero"class="hero is-large is-info is-overlay">
+    <section id="hero" class="hero is-large is-info is-overlay">
         <div class="hero-body">
             <p class="title text-title-name">
                 SUKAWIT BUALOY
@@ -34,24 +34,22 @@
 
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="/image/narasurn.png"
-                    style="width:100%">
+                <img src="/image/narasurn.png" style="width:100%">
                 <div class="text">Battle Ship Model</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="/image/CA_WEb.png"
-                    style="width:100%">
-                <div class="text">My project website colapration with Faculty of Architecture. King Mongkut's Institute of Technology Ladkrabang.</div>
+                <img src="/image/CA_WEb.png" style="width:100%">
+                <div class="text">My project website colapration with Faculty of Architecture. King Mongkut's Institute
+                    of Technology Ladkrabang.</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="/image/TicTacToe.png"
-                    style="width:100%">
+                <img src="/image/TicTacToe.png" style="width:100%">
                 <div class="text">MY project website "DOUBLE TIC TAC TOE"
-                    </div>
+                </div>
             </div>
 
 
@@ -82,10 +80,13 @@
                 </div>
                 <div class="column is-4 ">
                     <h1 class="title  text-gradient-aboutme">BIO</h1>
-                    <p style="font-size: 1.35vw;" class="text-gradient-aboutme">I am studying at King Mongkut's Institute of Technology Ladkrabang, in the School of Information Technology, majoring 
-                        in Multimedia and Game Development I can use Unreal Engine, do modeling, and also do web development.</p>
-                        <br>
-                        <button class="ResumeButton" type="submit" onclick="window.open('/pdf/Resume.pdf')">Open Resume!</button>
+                    <p style="font-size: 1.35vw;" class="text-gradient-aboutme">I am studying at King Mongkut's
+                        Institute of Technology Ladkrabang, in the School of Information Technology, majoring
+                        in Multimedia and Game Development I can use Unreal Engine, do modeling, and also do web
+                        development.</p>
+                    <br>
+                    <button class="ResumeButton" type="submit" onclick="window.open('/pdf/Resume.pdf')">Open
+                        Resume!</button>
                 </div>
             </div>
         </div>
@@ -95,7 +96,7 @@
     <section class="card-content" style="margin-top: 10vh;">
         <div class="container">
             <div style="text-align: center; margin-bottom: 30px;">
-                <h1 id="revalHead"class="reveal title is-2 text-gradient"> MY WORK </h1>
+                <h1 id="revalHead" class="reveal title is-2 text-gradient"> MY WORK </h1>
             </div>
             <div class="columns reveal card-model">
                 <div class="column reveal">
@@ -116,19 +117,19 @@
                 </div>
                 <div class="column reveal card-model">
                     <a href="ShowWebside.html">
-                    <div class="card-zoom">
-                        <div class="card-zoom-image">
-                            <figure class="image is-4by3">
-                                <img src="image/TicTacToe2.png" alt="Placeholder image">
-                            </figure>
+                        <div class="card-zoom">
+                            <div class="card-zoom-image">
+                                <figure class="image is-4by3">
+                                    <img src="image/TicTacToe2.png" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content text-in-card ">
+                                <p class="title">
+                                    WEBSITE
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-content text-in-card ">
-                            <p class="title">
-                                WEBSITE
-                            </p>
-                        </div>
-                    </div>
-                </a>
+                    </a>
                 </div>
                 <div class="column reveal card-model">
                     <div class="card-zoom">
@@ -190,11 +191,57 @@
                 </div>
             </div>
     </section>
+    <section class="section contect" id="Contect">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8">
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h1 class="reveal-Contect title is-2 text-gradient"> CONTECT ME </h1>
+
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Text input">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input id="email" class="input is-danger" type="email" placeholder="Email input" value="">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </span>
+                            </div>
+                            <p class="help is-danger">This email is invalid</p>
+                        </div>
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Textarea"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link" onclick="sendEmail()">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+
+                </div>
+            </div>
+        </div>
+    </section>
     <br>
 
 
 
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
 
 </body>
