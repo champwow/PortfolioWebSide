@@ -18,7 +18,22 @@ function reveal() {
     var reveals = document.querySelectorAll(".reveal");
     var revealsAboutMe = document.querySelectorAll(".reveal-aboutMe");
     var textMywork = document.getElementById("mywork");
+    var textMyHome = document.getElementById("Home");
     var textAboutMe = document.getElementById("AboutMe");
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTopHead = document.getElementById("hero").getBoundingClientRect().top;;
+        var elementVisible = 200;
+        if (elementTopHead < windowHeight - elementVisible && elementTopHead > -1500) {
+            textMyHome.style.color = "#30CFD0";
+            textMyHome.style.fontSize = "1.5vw"
+        }
+        else{
+            textMyHome.style.color = "#ffffff";
+            textMyHome.style.fontSize = "1vw"
+        }
+      
+    }
 
     for (let i = 0; i < revealsAboutMe.length; i++) {
         var windowHeight = window.innerHeight;
@@ -36,11 +51,7 @@ function reveal() {
             textAboutMe.style.color = "#ffffff";
             textAboutMe.style.fontSize = "1vw"
         }
-        //  else {
-        //     revealsAboutMe[i].classList.remove("REactive");
-        //     textAboutMe.style.color = "#ffffff";
-        //     textAboutMe.style.fontSize = "1vw"
-        // }
+
 
     }
 
@@ -49,7 +60,6 @@ function reveal() {
         var elementTop = reveals[i].getBoundingClientRect().top;
         var elementTopHead = document.getElementById("revalHead").getBoundingClientRect().top;;
         var elementVisible = 200;
-        console.log(elementTopHead);
         if (elementTopHead < windowHeight - elementVisible && elementTopHead > -500) {
             textMywork.style.color = "#30CFD0";
             textMywork.style.fontSize = "1.5vw"
@@ -68,6 +78,7 @@ function reveal() {
            
         }
     }
+  
 }
 
 function showSlides(n) {
@@ -88,18 +99,26 @@ function showSlides(n) {
 }
 
 function showmenu() {
-    console.log("sdsdsdsdsds");
     let myworktext = document.getElementById("mywork");
     let AboutMetext = document.getElementById("AboutMe");
+    let Hometext = document.getElementById("Home");
+    let Contacetext = document.getElementById("Contect");
     myworktext.innerHTML = "MY WORK";
     AboutMetext.innerHTML = "ABOUT ME";
+    Hometext.innerHTML = "HOME";
+    Contacetext.innerHTML = "CONTECT";
+    
 }
 
 function cancleShowMenu() {
     let myworktext = document.getElementById("mywork");
     let AboutMetext = document.getElementById("AboutMe");
+    let Hometext = document.getElementById("Home");
+    let Contacetext = document.getElementById("Contect");
     myworktext.innerHTML = "."
     AboutMetext.innerHTML = ".";
+    Hometext.innerHTML = ".";
+    Contacetext.innerHTML = ".";
 }
 
 
@@ -108,8 +127,21 @@ window.addEventListener("scroll", reveal);
 function scrollOnReveal() {
     var reveals = document.querySelector(".reveal");
     var elementTop = reveals.getBoundingClientRect().top;
-    var elementVisible = 160;
-    window.scrollTo(0, elementTop - elementVisible);
+    window.scrollTo(0, elementTop );
+
+
+}
+function scrollOnHome() {
+    var reveals = document.getElementById("hero");
+    var elementTop = reveals.getBoundingClientRect().top;
+    window.scrollTo(0, elementTop);
+
+
+}
+function scrollOnAboutMe() {
+    var reveals = document.getElementById("aboutme");
+    var elementTop = reveals.getBoundingClientRect().top;
+    window.scrollTo(0, elementTop);
 
 
 }

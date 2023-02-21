@@ -1,9 +1,9 @@
 model-viewer {
-    margin-top: 100px;
-    height: 30vw;
+    height: 60vh;
     position: sticky;
-    top: 20vh;
-    margin-left: 10vw;
+    top: 25vh;
+    /* margin-left: 10vw; */
+    width: 50vw;
 }
 
 body,
@@ -66,4 +66,26 @@ html {
 
 .card-zoom:hover .card-zoom-image {
     transform: scale(1.1);
+}
+.BackButton {
+	box-shadow: -6px 5px 46px rgba(0, 0, 0, 0.3);
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:7px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:0.5vw;
+	padding:0.5vw 1vw;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.BackButton:hover {
+	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	background-color:#415989;
+}
+.BackButton:active {
+	position:relative;
+	top:1px;
 }
