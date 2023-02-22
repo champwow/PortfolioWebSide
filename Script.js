@@ -106,7 +106,7 @@ function showmenu() {
     myworktext.innerHTML = "MY WORK";
     AboutMetext.innerHTML = "ABOUT ME";
     Hometext.innerHTML = "HOME";
-    Contacetext.innerHTML = "CONTECT";
+    
     
 }
 
@@ -118,7 +118,7 @@ function cancleShowMenu() {
     myworktext.innerHTML = "."
     AboutMetext.innerHTML = ".";
     Hometext.innerHTML = ".";
-    Contacetext.innerHTML = ".";
+    
 }
 
 
@@ -148,9 +148,7 @@ function scrollOnAboutMe() {
 
 function sendEmail() {
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "sukawit1909@gmail.com",
-        Password : "18C7F859CB79A83FD8E2FEE560577E06419C",
+        SecureToken : "8adc915b-f24c-467d-9b8b-1ced615918f0",
         To : 'sukawit1909@gmail.com',
         From : document.getElementById("email").value,
         Subject : "This is the subject",
@@ -159,3 +157,10 @@ function sendEmail() {
       message => alert(message)
     );
     }
+
+    // Your security token is 8adc915b-f24c-467d-9b8b-1ced615918f0 Please take note of this.
+
+    let menuToggle = document.querySelector('.menuToggle');
+menuToggle.onclick = function () {
+    menuToggle.classList.toggle('active');
+}
