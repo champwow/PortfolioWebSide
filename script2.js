@@ -1,65 +1,43 @@
-function reveal() {
-    var home = document.querySelector(".hero").getBoundingClientRect().top;
-    var revealswork = document.getElementById("workpage").getBoundingClientRect().top;
-    var revealsAboutMe = document.getElementById("pageaboutme").getBoundingClientRect().top;
-    var revealsContact = document.getElementById("pagecontact").getBoundingClientRect().top;
 
-    var windowHeight = window.innerHeight;
+function reveal() {
+    var home = document.getElementById('hero').getBoundingClientRect();
+    var revealswork = document.getElementById("workpage").getBoundingClientRect();
+    var revealsAboutMe = document.getElementById("pageaboutme").getBoundingClientRect();
+    var revealsContact = document.getElementById("pagecontact").getBoundingClientRect();
+
 
     var buttonhome = document.getElementById("Home");
     var buttonwork = document.getElementById("mywork");
     var buttonabout = document.getElementById("AboutMe");
     var buttoncontact = document.getElementById("ContactMe");
+    const section = document.getElementById('hero');
 
-    if (home * -1 < windowHeight) {
+    // Get the position of the section relative to the viewport
+    const rect = section.getBoundingClientRect();
+    console.log(revealsAboutMe.bottom);
+
+    // Check if the section is currently visible in the viewport
+    if (home.bottom >= 100 && home.top <= window.innerHeight) {
         buttonhome.style.backgroundColor = "#0d0a18";
-    }
-    else{
+    } else {
         buttonhome.style.backgroundColor = "";
     }
-
-    if (revealswork * -1 < windowHeight +200  && revealswork * -1 > windowHeight-750 - revealswork * -1) {
+    if (revealswork.bottom >= 0 && revealswork.top <= window.innerHeight && revealswork.top <= 100) {
         buttonwork.style.backgroundColor = "#0d0a18";
-    }
-    else{
+    } else {
         buttonwork.style.backgroundColor = "";
     }
-
-    if (revealsAboutMe * -1 < windowHeight && revealsAboutMe * -1 > windowHeight-1000 - revealsAboutMe * -1) {
+    if (revealsAboutMe.bottom >= 100 && revealsAboutMe.top <= window.innerHeight && revealsAboutMe.top <= 100) {
         buttonabout.style.backgroundColor = "#0d0a18";
-
-    }
-    else{
+    } else {
         buttonabout.style.backgroundColor = "";
-    } 
-
-    if (revealsContact * -1 < windowHeight && revealsContact * -1 > windowHeight-1000 - revealsContact * -1) {
-        buttoncontact.style.backgroundColor = "#0d0a18";
-
     }
-    else{
+    if (revealsContact.bottom >= 0 && revealsContact.top <= window.innerHeight && revealsContact.top <= 100) {
+        buttoncontact.style.backgroundColor = "#0d0a18";
+    } else {
         buttoncontact.style.backgroundColor = "";
-    } 
+    }   
 }
-function scrollOnHome(){
-    var reveals = document.getElementById("hero");
-    var elementTop = reveals.getBoundingClientRect().top;
-    window.scrollTo(0, elementTop+50);
-}
-
-function scrollOnMyWork(){
-    var reveals = document.getElementById("workpage");
-    var elementTop = reveals.getBoundingClientRect().top;
-    window.scrollTo(0, elementTop+50);
-}
-
-function scrollOnAboutME(){
-    var reveals = document.getElementById("pageaboutme");
-    var elementTop = reveals.getBoundingClientRect().top;
-    window.scrollTo(0, elementTop);
-}
-
 
 window.addEventListener("scroll", reveal);
-
 reveal();

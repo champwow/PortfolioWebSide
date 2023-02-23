@@ -8,9 +8,9 @@ html {
 
 .menu-bar {
     width: 19vw;
-    height: 100vh;
+    height: 100%;
     background-color: black;
-    position: sticky;
+    position: fixed;
     top: 0px;
     z-index: 1;
     transition-duration: 500ms;

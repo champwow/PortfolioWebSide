@@ -123,27 +123,7 @@ function cancleShowMenu() {
 
 window.addEventListener("scroll", reveal);
 
-function scrollOnReveal() {
-    var reveals = document.querySelector(".reveal");
-    var elementTop = reveals.getBoundingClientRect().top;
-    window.scrollTo(0, elementTop );
 
-
-}
-function scrollOnHome() {
-    var reveals = document.getElementById("hero");
-    var elementTop = reveals.getBoundingClientRect().top;
-    window.scrollTo(0, elementTop);
-
-
-}
-function scrollOnAboutMe() {
-    var reveals = document.getElementById("aboutme");
-    var elementTop = reveals.getBoundingClientRect().top;
-    window.scrollTo(0, elementTop);
-
-
-}
 
 function sendEmail() {
     Email.send({

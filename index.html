@@ -15,14 +15,14 @@
 
 <body>
     <div class="menu-bar">
-        <div class="slidebar-image">
-            <a href="/"><img src="/image/prifile.png" alt="" class="image-100w"></a>
+        <div class="slidebar-image ">
+            <a href="/"><img src="/image/logo.png" alt="" class="image-100w"></a>
         </div>
         <nav class="nav-menu">
-            <a class="MenuSelector" id="Home" onclick="scrollOnHome()">HOME</a><br>
-            <a class="MenuSelector" id="mywork" onclick="scrollOnMyWork()">MY WORK</a><br>
-            <a class="MenuSelector" id="AboutMe" onclick="scrollOnAboutME()">ABOUT ME</a><br>
-            <a class="MenuSelector" id="ContactMe" onclick="scrollOnContact()">CONTACT ME</a><br>
+            <a class="smoothScroll" href="#hero" id="Home">HOME</a><br>
+            <a class="smoothScroll" href="#workpage" id="mywork">MY WORK</a><br>
+            <a class="smoothScroll" href="#pageaboutme" id="AboutMe" >ABOUT ME</a><br>
+            <a class="smoothScroll" href="#textcontact" id="ContactMe" >CONTACT ME</a><br>
         </nav>
         <div class="slidebar-border"></div>
     </div>
@@ -59,7 +59,7 @@
                 </figure>
             </div>
     </section> -->
-    <section style="padding-left: 15%; padding-top: 10vh;" id="workpage">
+    <section style="padding-left: 15%; padding-top: 10%;" id="workpage">
         <div class="container">
             <div style="text-align: center; margin-bottom: 30px;">
                 <h1 id="WORK" class="title big"> MY WORK </h1>
@@ -133,15 +133,15 @@
         </div>
     </section>
     <br><br>
-    <section style="padding-left: 15%; padding-top: 10vh; background-color: #3c5668; padding-bottom: 10vh;" id="pageaboutme">
+    <section style="padding-left: 15%; padding-top: 10%; background-color: #3c5668; padding-bottom: 10vh;" id="pageaboutme">
         <div class="container">
             <div style="text-align: center; margin-bottom: 30px;">
                 <h1 class="title big"> ABOUT ME </h1>
             </div>
             <div class="columns">
-                <div class="column is-6" style="padding-left: 10vw;">
-                    <figure class="image image-profile">
-                        <img class="" src="image/prifile.png" alt="Placeholder image" style="align-items: end;">
+                <div class="column is-6 is-flex-wrap-wrap" style="margin-left: auto;">
+                    <figure class="image image-profile center">
+                        <img  src="image/prifile.png" alt="Placeholder image">
                     </figure>
                 </div>
                 <div class="column is-6" style="color: aliceblue; ">
@@ -187,16 +187,15 @@
                                 <a href="/pdf/Resume.pdf" class='butn butn__new'><span>OPEN RESUME</span></a>
                               </div>
                         </div>
-                        
                     </div>
                     
                 </div>
             </div>
         </div>
     </section>
-    <section style="padding-left: 15%; padding-top: 10vh; background-color: #683c52; padding-bottom: 10vh;" id="pagecontact">
+    <section style="padding-left: 15%; padding-top: 20vw; background-color: #683c52; padding-bottom: 10vw;" id="pagecontact" >
         <div class="container">
-            <div style="text-align: center; margin-bottom: 30px;">
+            <div style="text-align: center; margin-bottom: 30px;" id="textcontact">
                 <h1 class="title big"> CONTACT ME </h1>
             </div>
             <div class="columns social">
