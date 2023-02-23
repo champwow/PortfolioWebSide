@@ -1,104 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sukawit Bualot Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="menu-bar" onmouseover="showmenu()" onmouseleave="cancleShowMenu()">
-        <a class="MenuSelector" id="Home" onclick="scrollOnHome()">.</a><br><br>
-        <a class="MenuSelector" id="AboutMe" onclick="scrollOnAboutMe()">.</a><br><br>
-        <a class="MenuSelector" id="mywork" onclick="scrollOnReveal()">.</a><br><br>
+    <div class="menu-bar">
+        <div class="slidebar-image">
+            <a href="/"><img src="/image/prifile.png" alt="" class="image-100w"></a>
+        </div>
+        <nav class="nav-menu">
+            <a class="MenuSelector" id="Home" onclick="scrollOnHome()">HOME</a><br>
+            <a class="MenuSelector" id="mywork" onclick="scrollOnMyWork()">MY WORK</a><br>
+            <a class="MenuSelector" id="AboutMe" onclick="scrollOnAboutME()">ABOUT ME</a><br>
+        </nav>
+        <div class="slidebar-border"></div>
     </div>
-    <section id="hero" class="hero is-large is-info is-overlay">
+    <section id="hero" class="hero is-large is-info">
         <div class="hero-body">
-            <p class="title text-title-name">
-                SUKAWIT BUALOY
-            </p>
-            <p class="subtitle">
-                Hello, this is all of my work.
-            </p>
-        </div>
-    </section>
-
-    <section class="image_slide">
-
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="/image/narasurn.png" style="width:100%">
-                <div class="text">Battle Ship Model</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="/image/CA_WEb.png" style="width:100%">
-                <div class="text">My project website colapration with Faculty of Architecture. King Mongkut's Institute
-                    of Technology Ladkrabang.</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="/image/TicTacToe.png" style="width:100%">
-                <div class="text">MY project website "DOUBLE TIC TAC TOE"
+            <div class="columns">
+                <div class="column is-2">
+                </div>
+                <div class="column is-5">
+                    <p class="title text-title-name">
+                        SUKAWIT BUALOY
+                    </p>
+                    <p class="title title-bio" style="color: #98ff98;">
+                        BIO
+                    </p>
+                    <p class="subtitle">
+                        สวัสดีครับ ผมชื่อนายสุขวิทย์ บัวลอย ปัจจุบันกำลังศึกษาอยู่ชั้นปีที่ 4
+                        ที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง คณะเทคโนโลยีสารสนเทศ
+                        แขนงวิชาการพัฒนาสื่อประสมและเกม
+                    </p>
                 </div>
             </div>
-
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
     </section>
-
-    <!-- การ์ด -->
-
-    <section class="section contect" id="aboutme">
+    <!-- <section style="padding-left: 15%;">
+        <div class="container">
+            <div id="slider">
+                <figure>
+                    <img src="/image/narasurn.png" alt>
+                    <img src="/image/tbrender.png" alt>
+                    <img src="/image/TicTacToe2.png" alt>
+                    <img src="/image/CA_WEb.png" alt>
+                    <img src="/image/rocket.png" alt>
+                </figure>
+            </div>
+    </section> -->
+    <section style="padding-left: 15%; padding-top: 10vh;" id="workpage">
         <div class="container">
             <div style="text-align: center; margin-bottom: 30px;">
-                <h1 class="reveal-aboutMe title is-2 text-gradient"> ABOUT ME </h1>
+                <h1 id="WORK" class="title big"> MY WORK </h1>
             </div>
-            <div class="columns reveal-aboutMe">
-                <div class="column is-6">
-                    <figure class="image image-profile">
-                        <img class="" src="image/prifile.png" alt="Placeholder image">
-                    </figure>
-                </div>
-                <div class="column is-4 ">
-                    <h1 class="title  text-gradient-aboutme">BIO</h1>
-                    <p style="font-size: 1.35vw;" class="text-gradient-aboutme">I am studying at King Mongkut's
-                        Institute of Technology Ladkrabang, in the School of Information Technology, majoring
-                        in Multimedia and Game Development I can use Unreal Engine, do modeling, and also do web
-                        development.</p>
-                    <br>
-                    <button class="ResumeButton" type="submit" onclick="window.open('/pdf/Resume.pdf')">Open
-                        Resume!</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    </div>
-
-    <section class="card-content" style="margin-top: 10vh;">
-        <div class="container">
-            <div style="text-align: center; margin-bottom: 30px;">
-                <h1 id="revalHead" class="reveal title is-2 text-gradient"> MY WORK </h1>
-            </div>
-            <div class="columns reveal card-model">
-                <div class="column reveal">
+            <div class="columns card-model">
+                <div class="column">
                     <a href="ModelShow.html">
                         <div class="card-zoom">
                             <div class="card-zoom-image">
@@ -107,14 +73,14 @@
                                 </figure>
                             </div>
                             <div class="card-content text-in-card ">
-                                <p class="title">
+                                <p class="title textInCard">
                                     MODEL
                                 </p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="column reveal card-model">
+                <div class="column card-model">
                     <a href="ShowWebside.html">
                         <div class="card-zoom">
                             <div class="card-zoom-image">
@@ -123,14 +89,14 @@
                                 </figure>
                             </div>
                             <div class="card-content text-in-card ">
-                                <p class="title">
+                                <p class="title textInCard">
                                     WEBSITE
                                 </p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="column reveal card-model">
+                <div class="column card-model">
                     <div class="card-zoom">
                         <div class="card-zoom-image">
                             <figure class="image is-4by3">
@@ -138,15 +104,15 @@
                             </figure>
                         </div>
                         <div class="card-content text-in-card ">
-                            <p class="title">
+                            <p class="title textInCard">
                                 Comming Soon
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="columns reveal card-model">
-                <div class="column reveal">
+            <div class="columns card-model">
+                <div class="column">
                     <div class="card-zoom">
                         <div class="card-zoom-image">
                             <figure class="image is-4by3">
@@ -154,13 +120,13 @@
                             </figure>
                         </div>
                         <div class="card-content text-in-card ">
-                            <p class="title">
+                            <p class="title textInCard">
                                 Comming Soon
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="column reveal card-model">
+                <div class="column card-model">
                     <div class="card-zoom">
                         <div class="card-zoom-image">
                             <figure class="image is-4by3">
@@ -168,13 +134,13 @@
                             </figure>
                         </div>
                         <div class="card-content text-in-card ">
-                            <p class="title">
+                            <p class="title textInCard">
                                 Comming Soon
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="column reveal  card-model">
+                <div class="column  card-model">
                     <div class="card-zoom">
                         <div class="card-zoom-image">
                             <figure class="image is-4by3">
@@ -182,51 +148,125 @@
                             </figure>
                         </div>
                         <div class="card-content text-in-card ">
-                            <p class="title">
+                            <p class="title textInCard">
                                 Comming Soon
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-    </section>
-    <section class="section contect" id="Contect">
-        <div class="container">
-            
-            <div class="navigation">
-                <div class="menuToggle"></div>
-                <div class="menu">
-                    <ul>
-                        <li style="--i:0.1s"><a href="mailto:sukawit1909@gmail.com">
-                                <i title="Email" class="fa fa-envelope" style="color: #ee721f;" target="_blank"></i>
-                            </a></li>
-                        <li style="--i:0.2s"><a href="https://www.facebook.com/sukawit.bualow.5" target="_blank">
-                            <i title="LinkedIn" class="fab fa-facebook-f" style="color: #0072b1"></i>
-                            </a></li>
-                        <li style="--i:0.3s"><a href="https://github.com/champwow" target="_blank">
-                            <i title="Github" class="fa-brands fa-github" style="color: black;"></i>
-                            </a></li>
-                        <li style="--i:0.4s"><a href="https://www.instagram.com/champ_w0w/" target="_blank">
-                            <i title="Instagram" class="fa-brands fa-instagram" style="color:purple"></i>
-                            </a></li>
-                    </ul>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 30px;">
-                <h1 id="revaContect" class="title is-2 text-gradient"> CONTACT ME </h1>
-            </div>
-            <!-- <h1>Connect With Me </h1> -->
-           
         </div>
     </section>
-    <br>
+    <br><br>
+    <section style="padding-left: 15%; padding-top: 10vh; background-color: #3c5668; padding-bottom: 10vh;" id="pageaboutme">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h1 class="title big"> ABOUT ME </h1>
+            </div>
+            <div class="columns">
+                <div class="column is-6" style="padding-left: 10vw;">
+                    <figure class="image image-profile">
+                        <img class="" src="image/prifile.png" alt="Placeholder image" style="align-items: end;">
+                    </figure>
+                </div>
+                <div class="column is-6" style="color: aliceblue; ">
+                    <div class="columns" style="margin: 0%;">
+                        <div class="column is-5" style="padding: 0%;">
+                            <span style="font-size: 2vw; text-shadow: 4px 2px 2px #18122B;">ชื่อ-สกุล</span><span
+                                style="font-size: 1.5vw; margin-left: 20px;">สุขวิทย์
+                                บัวลอย</span>
+                            <span style="font-size: 2vw;  text-shadow: 4px 2px 2px #18122B;">อายุ</span><span
+                                style="font-size: 1.5vw; margin-left: 20px;">21 ปี</span>
+                        </div>
+                        <div class="column is-6" style="padding: 0%;">
+                            <span
+                                style="margin-left: 5vw; font-size: 2vw; text-shadow: 4px 2px 2px #18122B;">ชื่อเล่น</span><span
+                                style="font-size: 1.5vw; margin-left: 20px;">แชมป์</span>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="columns" style="margin: 0%;">
+                        <div class="column is-5" style="padding: 0%;">
+                            <h1 style="font-size: 2vw; text-shadow: 4px 2px 2px #18122B;">Software Skills</h1>
+                        </div>
+                        <div class="column is-6" style="padding: 0%;"><span style="font-size: 1vw;">Unreal Engine 4
+                                (Use for game development), Substance painter (Texture), Maya (3D Modeling Rigging
+                                Animation), Visual Studio Code
+                            </span>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="columns" style="margin: 0%;">
+                        <div class="column is-5" style="padding: 0%;">
+                            <h1 style="font-size: 2vw; text-shadow: 4px 2px 2px #18122B;">กำลังศึกษาอยู่ที่</h1>
+                        </div>
 
-
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+                        <div class="column is-6" style="padding: 0%;"><span style="font-size: 1vw;">คณะเทคโนโลยีสารสนเทศ
+                                สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง แขนงวิชาการพัฒนาสื่อประสมและเกม
+                            </span>
+                        </div>
+                    </div>
+                    <div class="columns" style="margin-top: 5%;">
+                        <div class="column is-12" style="padding: 0%;">
+                            <div class="banner">
+                                <a href="/pdf/Resume.pdf" class='butn butn__new'><span>OPEN RESUME</span></a>
+                              </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding-left: 15%; padding-top: 10vh; background-color: #683c52; padding-bottom: 10vh;" id="pagecontact">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h1 class="title big"> CONTACT ME </h1>
+            </div>
+            <div class="columns social">
+                <div class="head__section">
+                    <img src="/image/296134263_1687798521597259_669946755485517731_n.jpg" alt="">
+                    
+                  </div>
+                  <div class="social__links">
+                    <ul id="item">
+                      <li class="instagram"><a href="https://www.instagram.com/champ_w0w/">
+                          <i class="fa fa-instagram"></i>
+                          <span>
+                            <h3>Instagram</h3>
+                            <p>ติดตาม Instagram ส่วนตัว</p>
+                          </span>
+                        </a></li>
+                      <li class="email"><a href="mailto:sukawit1909@gmail.com">
+                          <i class="fa fa-envelope"></i>
+                          <span>
+                            <h3>Email</h3>
+                            <p>ส่ง Email มาให้ผมโดยตรง</p>
+                          </span>
+                        </a></li>
+                      <li class="facebook"><a href="https://www.facebook.com/sukawit.bualow.5">
+                          <i class="fab fa-facebook-f"></i>
+                          <span>
+                            <h3>Facebook</h3>
+                            <p>ติดตาม Facebook ส่วนตัว</p>
+                          </span>
+                        </a></li>
+                      <li class="github"><a href="https://github.com/champwow">
+                          <i class="fa fa-github"></i>
+                          <span>
+                            <h3>Github</h3>
+                            <p>เข้าชม Github ของผม</p>
+                          </span>
+                        </a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+       
+    </section>
+    <script src="script2.js"></script>
     <script src="https://kit.fontawesome.com/12642bc27d.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-
 </body>
 
 </html>

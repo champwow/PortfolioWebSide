@@ -7,7 +7,7 @@ html {
 }
 
 .menu-bar {
-    width: 3vw;
+    width: 19vw;
     height: 100vh;
     background-color: black;
     position: sticky;
@@ -20,11 +20,11 @@ html {
     text-align: center;
 }
 
-.menu-bar:hover {
+/* .menu-bar:hover {
     background-color: black;
     width: 15vw;
     
-}
+} */
 
 .text-gradient {
     background: linear-gradient(to right, #5ec5c5, #c43ad6);
@@ -45,7 +45,7 @@ html {
 }
 
 .hero {
-    background-image: url(image/tbrender.png);
+    background-image: url(image/tbrender.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -57,7 +57,7 @@ html {
 }
 .image-profile{
     width: 25vw;
-    box-shadow: -6px 5px 46px rgba(0, 0, 0, 0.8);
+    box-shadow: -6px 5px 46px rgba(0, 0, 0, 0.8);  
 }
 
 * {

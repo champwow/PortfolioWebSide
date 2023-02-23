@@ -11,8 +11,7 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-
-
+ิ
 function reveal() {
 
     var reveals = document.querySelectorAll(".reveal");
@@ -161,6 +160,6 @@ function sendEmail() {
     // Your security token is 8adc915b-f24c-467d-9b8b-1ced615918f0 Please take note of this.
 
     let menuToggle = document.querySelector('.menuToggle');
-menuToggle.onclick = function () {
+    menuToggle.onclick = function () {
     menuToggle.classList.toggle('active');
 }
