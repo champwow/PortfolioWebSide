@@ -152,6 +152,23 @@ html {
     color: aliceblue;
     width: 100%;
 }
+#ContactMe {
+    padding-left: 5.2vw;
+    display: flex;
+    width: 100%;
+    bottom: 10vw;
+    color: aliceblue;
+    width: 100%;
+}
+
+#ContactMe:hover {
+    padding-left: 5vw;
+    display: flex;
+    width: 100%;
+    bottom: 10vw;
+    color: aliceblue;
+    width: 100%;
+}
 
 .revalHead {
     font-size: 2vw !important;

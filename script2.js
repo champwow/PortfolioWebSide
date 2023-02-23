@@ -2,12 +2,14 @@ function reveal() {
     var home = document.querySelector(".hero").getBoundingClientRect().top;
     var revealswork = document.getElementById("workpage").getBoundingClientRect().top;
     var revealsAboutMe = document.getElementById("pageaboutme").getBoundingClientRect().top;
+    var revealsContact = document.getElementById("pagecontact").getBoundingClientRect().top;
 
     var windowHeight = window.innerHeight;
 
     var buttonhome = document.getElementById("Home");
     var buttonwork = document.getElementById("mywork");
     var buttonabout = document.getElementById("AboutMe");
+    var buttoncontact = document.getElementById("ContactMe");
 
     if (home * -1 < windowHeight) {
         buttonhome.style.backgroundColor = "#0d0a18";
@@ -29,6 +31,14 @@ function reveal() {
     }
     else{
         buttonabout.style.backgroundColor = "";
+    } 
+
+    if (revealsContact * -1 < windowHeight && revealsContact * -1 > windowHeight-1000 - revealsContact * -1) {
+        buttoncontact.style.backgroundColor = "#0d0a18";
+
+    }
+    else{
+        buttoncontact.style.backgroundColor = "";
     } 
 }
 function scrollOnHome(){
