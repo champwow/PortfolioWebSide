@@ -15,7 +15,13 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.title {
+.title.big {
+    font-size: 5vw;
+    padding-bottom: 2vw;
+    color: aliceblue;
+    text-shadow: 6px 3px 2px #18122B;
+}
+.title big{
     text-align: center;
     padding: 40px;
 }

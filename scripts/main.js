@@ -22,7 +22,7 @@ function reveal() {
     } else {
         buttonhome.style.backgroundColor = "";
     }
-    if (revealswork.bottom >= 0 && revealswork.top <= window.innerHeight && revealswork.top <= 100) {
+    if (revealswork.bottom >= 150 && revealswork.top <= window.innerHeight && revealswork.top <= 100) {
         buttonwork.style.backgroundColor = "#0d0a18";
     } else {
         buttonwork.style.backgroundColor = "";
@@ -39,5 +39,5 @@ function reveal() {
     }   
 }
 
-window.addEventListener("scroll", reveal);
+document.getElementById("main").addEventListener("scroll", reveal);
 reveal();

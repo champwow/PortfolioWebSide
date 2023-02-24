@@ -8,7 +8,7 @@ model-viewer {
 
 body,
 html {
-    background: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
+    background: #443C68;
     margin: 0;
 }
 
@@ -28,12 +28,12 @@ html {
     text-shadow: 0 0 80px rgb(192 219 255 / 35%), 0 0 32px rgb(65 120 255 / 24%);
 }
 
-.text-gradient {
-    background: linear-gradient(to right, #30CFD0, #c43ad6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.title.big {
+    font-size: 5vw;
+    padding-bottom: 2vw;
+    color: aliceblue;
+    text-shadow: 6px 3px 2px #18122B;
 }
-
 
 /* 
 
@@ -44,12 +44,48 @@ html {
 .card-zoom:hover .card-zoom-image {
 	@apply scale-110;
 }  */
-
+.text-card {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    padding-top: 50%;
+    opacity: 0;
+    transition-duration: 500ms;
+    font-size: 1.8vw;
+    color: aliceblue;
+  }
+  .text-card-detail {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    padding-top: 5%;
+    opacity: 1;
+    transition-duration: 500ms;
+    font-size: 1.5vw;
+    color: aliceblue;
+  }
+  
+  .bg-card-head{
+    width: 100%;
+    background-color: #2732c7;
+    height: 100%;
+    opacity: 0;
+    transition-duration: 500ms; 
+  }
+  .bg-card{
+    width: 100%;
+    background-color: #2732c7;
+    height: 100%;
+    opacity: 0;
+    transition-duration: 500ms; 
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+  }
+  
 .card-zoom {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: -6px 5px 46px rgba(0, 0, 0, 0.3);
+    /* box-shadow: -6px 5px 46px rgba(0, 0, 0, 0.3); */
     height: 40vh;
 }
 
@@ -57,13 +93,24 @@ html {
     border-radius: 15px;
     width: 100%;
     height: 100%;
-    transition-property: all;
+    transition-property: all; 
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 500ms;
+    transition-duration: 500ms; 
     background-position: center;
     background-size: cover;
 }
-
+.card-zoom:hover .bg-card{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.card-zoom:hover .text-card{
+    opacity: 1;
+    padding-top: 40%;
+}
+.card-zoom:hover .text-card-detail{
+    opacity: 1;
+    padding-top: 5%;
+}
 .card-zoom:hover .card-zoom-image {
     transform: scale(1.1);
 }

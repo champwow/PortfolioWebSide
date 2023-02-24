@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Style_WebSideShow.css">
+    <link rel="stylesheet" href="/styles/Style_WebSideShow.css">
     <title>MY WEBSITE</title>
 </head>
 
@@ -16,8 +16,10 @@
         <a href="index.html"><button class="BackButton">HOME</button></a>
     </div>
     <section>
-        <h1 class="title is-2 text-gradient">MY PROJECT WEBSIDE</h1>
         <div class="container">
+            <div style="text-align: center;">
+                <h1 class="title is-2 big">MY PROJECT WEBSIDE</h1>
+            </div>   
             <div class="columns ">
                 <div class="column is-8">
                     <img src="/image/TicTacToe.png" style="width:100%; box-shadow: -6px 5px 46px rgba(0, 0, 0, 0.8);">
@@ -73,9 +75,29 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 </body>
-
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
 </html>

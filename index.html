@@ -1,246 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style2.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-    <div class="menu-bar">
-        <div class="slidebar-image ">
-            <a href="/"><img src="/image/logo.png" alt="" class="image-100w"></a>
-        </div>
-        <nav class="nav-menu">
-            <a class="smoothScroll" href="#hero" id="Home">HOME</a><br>
-            <a class="smoothScroll" href="#workpage" id="mywork">MY WORK</a><br>
-            <a class="smoothScroll" href="#pageaboutme" id="AboutMe" >ABOUT ME</a><br>
-            <a class="smoothScroll" href="#textcontact" id="ContactMe" >CONTACT ME</a><br>
+  <body>
+    <div class="wrapper">
+      <aside>
+        <div class="slidebar-image">
+          <a href="/"><img src="/image/logo.png" alt="logo" /></a>    
+        </div>  
+        <nav>
+          <a href="#hero" id="Home">HOME</a><br />
+          <a href="#workpage" id="mywork">MY WORK</a><br />
+          <a href="#pageaboutme" id="AboutMe">ABOUT ME</a><br />
+          <a href="#textcontact" id="ContactMe">CONTACT ME</a><br />
         </nav>
-        <div class="slidebar-border"></div>
-    </div>
-    <section id="hero" class="hero is-large is-info">
-        <div class="hero-body">
+      </aside>
+      <div class="slidebar-border"></div>  
+      <main id="main">
+        <section id="hero" class="hero is-large is-info">
+          <div class="hero-body">
             <div class="columns">
-                <div class="column is-2">
-                </div>
-                <div class="column is-5">
-                    <p class="title text-title-name">
-                        SUKAWIT BUALOY
-                    </p>
-                    <p class="title title-bio" style="color: #98ff98;">
-                        BIO
-                    </p>
-                    <p class="subtitle">
-                        สวัสดีครับ ผมชื่อนายสุขวิทย์ บัวลอย ปัจจุบันกำลังศึกษาอยู่ชั้นปีที่ 4
-                        ที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง คณะเทคโนโลยีสารสนเทศ
-                        แขนงวิชาการพัฒนาสื่อประสมและเกม
-                    </p>
-                </div>
+              <div class="column is-2"></div>
+              <div class="column is-5">
+                <p class="title text-title-name">SUKAWIT BUALOY</p>
+                <p class="title title-bio" style="color: #98ff98">BIO</p>
+                <p class="subtitle">
+                  สวัสดีครับ ผมชื่อนายสุขวิทย์ บัวลอย
+                  ปัจจุบันกำลังศึกษาอยู่ชั้นปีที่ 4
+                  ที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+                  คณะเทคโนโลยีสารสนเทศ แขนงวิชาการพัฒนาสื่อประสมและเกม
+                </p>
+              </div>
             </div>
-        </div>
-    </section>
-    <!-- <section style="padding-left: 15%;">
-        <div class="container">
-            <div id="slider">
-                <figure>
-                    <img src="/image/narasurn.png" alt>
-                    <img src="/image/tbrender.png" alt>
-                    <img src="/image/TicTacToe2.png" alt>
-                    <img src="/image/CA_WEb.png" alt>
-                    <img src="/image/rocket.png" alt>
-                </figure>
-            </div>
-    </section> -->
-    <section style="padding-left: 15%; padding-top: 10%;" id="workpage">
-        <div class="container">
-            <div style="text-align: center; margin-bottom: 30px;">
-                <h1 id="WORK" class="title big"> MY WORK </h1>
-            </div>
-            <div class="columns card-model">
-                <div class="column is-4">
-                    <a href="ModelShow.html">
-                        <div class="card-zoom">
-                            <div class="card-zoom-image">
-                                <figure class="image is-4by3">
-                                    <img src="image/tbrender.png" alt="Placeholder image">
-                                </figure>
-                            </div>
-                            <div class="card-content text-in-card ">
-                                <p class="title textInCard">
-                                    MODEL
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="column is-4 card-model">
-                    <a href="ShowWebside.html">
-                        <div class="card-zoom">
-                            <div class="card-zoom-image">
-                                <figure class="image is-4by3">
-                                    <img src="image/TicTacToe2.png" alt="Placeholder image">
-                                </figure>
-                            </div>
-                            <div class="card-content text-in-card ">
-                                <p class="title textInCard">
-                                    WEBSITE
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="column is-4 card-model">
-                    <div class="card-zoom">
-                        <div class="card-zoom-image">
-                            <figure class="image is-4by3">
-                                <img src="image/banana.png" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content text-in-card ">
-                            <p class="title textInCard">
-                                GAME PROJECT
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="columns card-model">
-                <div class="column is-4">
-                    <div class="card-zoom">
-                        <div class="card-zoom-image">
-                            <figure class="image is-4by3">
-                                <img src="image/Krabasing.png" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content text-in-card ">
-                            <p class="title textInCard">
-                                ANIMATION
-                            </p>
-                        </div>
-                    </div>
-                </div>
-               
-               
-            </div>
-        </div>
-    </section>
-    <br><br>
-    <section style="padding-left: 15%; padding-top: 10%; background-color: #3c5668; padding-bottom: 10vh;" id="pageaboutme">
-        <div class="container">
-            <div style="text-align: center; margin-bottom: 30px;">
-                <h1 class="title big"> ABOUT ME </h1>
-            </div>
-            <div class="columns">
-                <div class="column is-6 is-flex-wrap-wrap" style="margin-left: auto;">
-                    <figure class="image image-profile center">
-                        <img  src="image/prifile.png" alt="Placeholder image">
-                    </figure>
-                </div>
-                <div class="column is-6" style="color: aliceblue; ">
-                    <div class="columns" style="margin: 0%;">
-                        <div class="column is-5" style="padding: 0%;">
-                            <span style="font-size: 2vw; text-shadow: 4px 2px 2px #18122B;">ชื่อ-สกุล</span><span
-                                style="font-size: 1.5vw; margin-left: 20px;">สุขวิทย์
-                                บัวลอย</span>
-                            <span style="font-size: 2vw;  text-shadow: 4px 2px 2px #18122B;">อายุ</span><span
-                                style="font-size: 1.5vw; margin-left: 20px;">21 ปี</span>
-                        </div>
-                        <div class="column is-6" style="padding: 0%;">
-                            <span
-                                style="margin-left: 5vw; font-size: 2vw; text-shadow: 4px 2px 2px #18122B;">ชื่อเล่น</span><span
-                                style="font-size: 1.5vw; margin-left: 20px;">แชมป์</span>
-                        </div>
-                    </div>
-                    <br><br>
-                    <div class="columns" style="margin: 0%;">
-                        <div class="column is-5" style="padding: 0%;">
-                            <h1 style="font-size: 2vw; text-shadow: 4px 2px 2px #18122B;">Software Skills</h1>
-                        </div>
-                        <div class="column is-6" style="padding: 0%;"><span style="font-size: 1vw;">Unreal Engine 4
-                                (Use for game development), Substance painter (Texture), Maya (3D Modeling Rigging
-                                Animation), Visual Studio Code
-                            </span>
-                        </div>
-                    </div>
-                    <br><br>
-                    <div class="columns" style="margin: 0%;">
-                        <div class="column is-5" style="padding: 0%;">
-                            <h1 style="font-size: 2vw; text-shadow: 4px 2px 2px #18122B;">กำลังศึกษาอยู่ที่</h1>
-                        </div>
+          </div>
+        </section>
 
-                        <div class="column is-6" style="padding: 0%;"><span style="font-size: 1vw;">คณะเทคโนโลยีสารสนเทศ
-                                สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง แขนงวิชาการพัฒนาสื่อประสมและเกม
-                            </span>
-                        </div>
+        <div class="wrapper_inner">
+          <section id="workpage">
+            <div class="container is-max-widescreen py-6">
+              <div style="text-align: center; margin-bottom: 30px">
+                <h1 id="WORK" class="title big">MY WORK</h1>
+              </div>
+              <div class="columns card-model">
+                <div class="column is-4">
+                  <a href="ModelShow.html">
+                    <div class="card-zoom">
+                      <div class="card-zoom-image">
+                        <figure class="image is-4by3">
+                          <img
+                            src="image/tbrender.png"
+                            alt="Placeholder image"
+                          />
+                        </figure>
+                      </div>
+                      <div class="card-content text-in-card">
+                        <p class="title textInCard">MODEL</p>
+                      </div>
                     </div>
-                    <div class="columns" style="margin-top: 5%;">
-                        <div class="column is-12" style="padding: 0%;">
-                            <div class="banner">
-                                <a href="/pdf/Resume.pdf" class='butn butn__new'><span>OPEN RESUME</span></a>
-                              </div>
-                        </div>
-                    </div>
-                    
+                  </a>
                 </div>
+                <div class="column is-4 card-model">
+                  <a href="ShowWebside.html">
+                    <div class="card-zoom">
+                      <div class="card-zoom-image">
+                        <figure class="image is-4by3">
+                          <img
+                            src="image/TicTacToe2.png"
+                            alt="Placeholder image"
+                          />
+                        </figure>
+                      </div>
+                      <div class="card-content text-in-card">
+                        <p class="title textInCard">WEBSITE</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="column is-4 card-model">
+                  <a href="/ShowGame.html">
+                  <div class="card-zoom">
+                    <div class="card-zoom-image">
+                      <figure class="image is-4by3">
+                        <img src="image/banana.png" alt="Placeholder image" />
+                      </figure>
+                    </div>
+                    <div class="card-content text-in-card">
+                      <p class="title textInCard">GAME PROJECT</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+              </div>
+              <div class="columns card-model">
+                <div class="column is-4">
+                  <div class="card-zoom">
+                    <div class="card-zoom-image">
+                      <figure class="image is-4by3">
+                        <img
+                          src="image/Krabasing.png"
+                          alt="Placeholder image"
+                        />
+                      </figure>
+                    </div>
+                    <div class="card-content text-in-card">
+                      <p class="title textInCard">ANIMATION</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </section>
         </div>
-    </section>
-    <section style="padding-left: 15%; padding-top: 20vw; background-color: #683c52; padding-bottom: 10vw;" id="pagecontact" >
-        <div class="container">
-            <div style="text-align: center; margin-bottom: 30px;" id="textcontact">
-                <h1 class="title big"> CONTACT ME </h1>
+
+        <section
+          style="
+            background-color: #3c5668;
+          "id="pageaboutme"
+        >
+          <div class="container is-max-widescreen py-6">
+            <div style="text-align: center; margin-bottom: 30px">
+              <h1 class="title big">ABOUT ME</h1>
+            </div>
+            <div class="columns">
+              <div
+                class="column is-6 is-flex-wrap-wrap"
+                style="margin-left: auto"
+              >
+                <figure class="image image-profile center">
+                  <img src="image/prifile.png" alt="Placeholder image" />
+                </figure>
+              </div>
+              <div class="column is-6" style="color: aliceblue">
+                <div class="columns" style="margin: 0%">
+                  <div class="column is-5" style="padding: 0%">
+                    <span
+                      style="font-size: 2vw; text-shadow: 4px 2px 2px #18122b"
+                      >ชื่อ-สกุล</span
+                    ><span style="font-size: 1.5vw; margin-left: 20px"
+                      >สุขวิทย์ บัวลอย</span
+                    >
+                    <span
+                      style="font-size: 2vw; text-shadow: 4px 2px 2px #18122b"
+                      >อายุ</span
+                    ><span style="font-size: 1.5vw; margin-left: 20px"
+                      >21 ปี</span
+                    >
+                  </div>
+                  <div class="column is-6" style="padding: 0%">
+                    <span
+                      style="
+                        margin-left: 5vw;
+                        font-size: 2vw;
+                        text-shadow: 4px 2px 2px #18122b;
+                      "
+                      >ชื่อเล่น</span
+                    ><span style="font-size: 1.5vw; margin-left: 20px"
+                      >แชมป์</span
+                    >
+                  </div>
+                </div>
+                <br /><br />
+                <div class="columns" style="margin: 0%">
+                  <div class="column is-5" style="padding: 0%">
+                    <h1
+                      style="font-size: 2vw; text-shadow: 4px 2px 2px #18122b"
+                    >
+                      Software Skills
+                    </h1>
+                  </div>
+                  <div class="column is-6" style="padding: 0%">
+                    <span style="font-size: 1vw"
+                      >Unreal Engine 4 (Use for game development), Substance
+                      painter (Texture), Maya (3D Modeling Rigging Animation),
+                      Visual Studio Code
+                    </span>
+                  </div>
+                </div>
+                <br /><br />
+                <div class="columns" style="margin: 0%">
+                  <div class="column is-5" style="padding: 0%">
+                    <h1
+                      style="font-size: 2vw; text-shadow: 4px 2px 2px #18122b"
+                    >
+                      กำลังศึกษาอยู่ที่
+                    </h1>
+                  </div>
+
+                  <div class="column is-6" style="padding: 0%">
+                    <span style="font-size: 1vw"
+                      >คณะเทคโนโลยีสารสนเทศ
+                      สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+                      แขนงวิชาการพัฒนาสื่อประสมและเกม
+                    </span>
+                  </div>
+                </div>
+                <div class="columns" style="margin-top: 5%">
+                  <div class="column is-12" style="padding: 0%">
+                    <div class="banner">
+                      <a href="/pdf/Resume.pdf" class="butn butn__new"
+                        ><span>OPEN RESUME</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          style="
+            background-color: #683c52;
+          "
+          id="pagecontact"
+        >
+          <div class="container is-max-widescreen py-6">
+            <div
+              style="text-align: center; margin-bottom: 30px"
+              id="textcontact"
+            >
+              <h1 class="title big">CONTACT ME</h1>
             </div>
             <div class="columns social">
-                <div class="head__section">
-                    <img src="/image/296134263_1687798521597259_669946755485517731_n.jpg" alt="">
-                    
-                  </div>
-                  <div class="social__links">
-                    <ul id="item">
-                      <li class="instagram"><a href="https://www.instagram.com/champ_w0w/">
-                          <i class="fa fa-instagram"></i>
-                          <span>
-                            <h3>Instagram</h3>
-                            <p>ติดตาม Instagram ส่วนตัว</p>
-                          </span>
-                        </a></li>
-                      <li class="email"><a href="mailto:sukawit1909@gmail.com">
-                          <i class="fa fa-envelope"></i>
-                          <span>
-                            <h3>Email</h3>
-                            <p>ส่ง Email มาให้ผมโดยตรง</p>
-                          </span>
-                        </a></li>
-                      <li class="facebook"><a href="https://www.facebook.com/sukawit.bualow.5">
-                          <i class="fab fa-facebook-f"></i>
-                          <span>
-                            <h3>Facebook</h3>
-                            <p>ติดตาม Facebook ส่วนตัว</p>
-                          </span>
-                        </a></li>
-                      <li class="github"><a href="https://github.com/champwow">
-                          <i class="fa fa-github"></i>
-                          <span>
-                            <h3>Github</h3>
-                            <p>เข้าชม Github ของผม</p>
-                          </span>
-                        </a></li>
-                    </ul>
-                  </div>
+              <div class="head__section">
+                <img
+                  src="/image/296134263_1687798521597259_669946755485517731_n.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="social__links">
+                <ul id="item">
+                  <li class="instagram">
+                    <a href="https://www.instagram.com/champ_w0w/">
+                      <i class="fa fa-instagram"></i>
+                      <span>
+                        <h3>Instagram</h3>
+                        <p>ติดตาม Instagram ส่วนตัว</p>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="email">
+                    <a href="mailto:sukawit1909@gmail.com">
+                      <i class="fa fa-envelope"></i>
+                      <span>
+                        <h3>Email</h3>
+                        <p>ส่ง Email มาให้ผมโดยตรง</p>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="facebook">
+                    <a href="https://www.facebook.com/sukawit.bualow.5">
+                      <i class="fab fa-facebook-f"></i>
+                      <span>
+                        <h3>Facebook</h3>
+                        <p>ติดตาม Facebook ส่วนตัว</p>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="github">
+                    <a href="https://github.com/champwow">
+                      <i class="fa fa-github"></i>
+                      <span>
+                        <h3>Github</h3>
+                        <p>เข้าชม Github ของผม</p>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
-       
-    </section>
-    <script src="script2.js"></script>
-    <script src="https://kit.fontawesome.com/12642bc27d.js" crossorigin="anonymous"></script>
-</body>
+          </div>
+        </section>
+      </main>
+    </div>
 
+    <script src="/scripts/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/12642bc27d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -2,10 +2,53 @@ body,
 html {
     background: #443C68;
     margin: 0;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+}
+
+.wrapper_inner {
+    width: 90%;
+    margin: 0px auto;
+}
+
+main {
+    overflow-x: hidden;
     transition-duration: 500ms;
     scroll-behavior: smooth;
-    height: 2000px;
-    font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+aside{
+    flex: 1 0 15%;
+    width: 15vw;
+    background-color: #18122B;
+    box-shadow: 0 0 10px 0 #000;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 1rem;
+    vertical-align: middle;
+}
+
+nav a{
+    color: aliceblue;
+    width: 100%;
+    height: 4vh;
+    vertical-align: middle;
+  
+}
+nav a:hover{
+    color: aliceblue;
+    background-color: #0d0a18 ;
+    padding-right: 10px;
+    width: 100%; 
 }
 
 ::-webkit-scrollbar {
@@ -21,7 +64,7 @@ html {
 }
 
 .hero {
-    background-image: url(image/tbrender.jpg);
+    background-image: url(/image/tbrender.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -46,36 +89,16 @@ html {
 .text-title-name {
     text-shadow: 4px 2px 2px #18122B;
 }
+
 .center {
     margin: auto;
     width: 50%;
     padding: 10px;
-  }
-.menu-bar {
-    position: fixed;
-    width: 15vw;
-    left: 0px;
-    top: 0px;
-    z-index: 9999;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-    background-color: #18122B;
-    box-shadow: 0 0 10px 0 #000;
 }
 
+
 .slidebar-image {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    height: 38vh;
     padding: 1.5vw;
-
-
 }
 
 .image-100w {
@@ -89,92 +112,22 @@ html {
 }
 
 .slidebar-border {
-    position: relative;
-    width: 1.5vw;
+    width: 2vw;
     height: 100%;
+    margin-left: auto;
+    margin-right: 0;
     background-color: #0d0a18;
 }
 
 .nav-menu {
 
-    /* right: 2vw !important; */
-    position: absolute;
     width: 100%;
     padding-top: 27vw;
     float: none;
     font-size: 1.4vw;
 }
 
-#Home {
-    display: flex;
-    width: 100%;
-    bottom: 10vw;
-    color: aliceblue;
-    width: 100%;
-    padding-left: 9.5vw;
-}
 
-#Home:hover {
-    display: flex;
-    width: 100%;
-    bottom: 10vw;
-    color: aliceblue;
-    width: 100%;
-    padding-left: 9.3vw;
-}
-
-#AboutMe {
-    display: flex;
-    width: 100%;
-    padding-left: 6.7vw;
-    bottom: 10vw;
-    color: aliceblue;
-    width: 100%;
-}
-
-#AboutMe:hover {
-    display: flex;
-    width: 100%;
-    padding-left: 6.5vw;
-    bottom: 10vw;
-    color: aliceblue;
-    width: 100%;
-}
-
-#mywork {
-    padding-left: 7.2vw;
-    display: flex;
-    width: 100%;
-    bottom: 10vw;
-    color: aliceblue;
-    width: 100%;
-}
-
-#mywork:hover {
-    padding-left: 7vw;
-    display: flex;
-    width: 100%;
-    bottom: 10vw;
-    color: aliceblue;
-    width: 100%;
-}
-#ContactMe {
-    padding-left: 5.2vw;
-    display: flex;
-    width: 100%;
-    bottom: 10vw;
-    color: aliceblue;
-    width: 100%;
-}
-
-#ContactMe:hover {
-    padding-left: 5vw;
-    display: flex;
-    width: 100%;
-    bottom: 10vw;
-    color: aliceblue;
-    width: 100%;
-}
 
 .revalHead {
     font-size: 2vw !important;
@@ -265,9 +218,11 @@ div#slider figure {
     width: 25vw;
     box-shadow: 0 0 10px 0 #000;
 }
-.banner{
-	text-align: center;
+
+.banner {
+    text-align: center;
 }
+
 .butn:link,
 .butn:visited {
     display: inline-flex;
@@ -419,7 +374,7 @@ div#slider figure {
     }
 }
 
-.columns.social{
+.columns.social {
     display: block;
     margin-left: auto;
     margin-right: auto;
