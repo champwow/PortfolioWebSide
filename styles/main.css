@@ -22,14 +22,14 @@ main {
     scroll-behavior: smooth;
 }
 
-aside{
+aside {
     flex: 1 0 15%;
     width: 15vw;
     background-color: #18122B;
     box-shadow: 0 0 10px 0 #000;
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: column;
     text-align: end;
@@ -37,18 +37,18 @@ nav{
     vertical-align: middle;
 }
 
-nav a{
+nav a {
     color: aliceblue;
     width: 100%;
     height: 4vh;
     vertical-align: middle;
-  
 }
-nav a:hover{
+
+nav a:hover {
     color: aliceblue;
-    background-color: #0d0a18 ;
+    background-color: #0d0a18;
     padding-right: 10px;
-    width: 100%; 
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -69,6 +69,10 @@ nav a:hover{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.title {
+    font-size: 2vw;
 }
 
 .title.big {
@@ -96,7 +100,6 @@ nav a:hover{
     padding: 10px;
 }
 
-
 .slidebar-image {
     padding: 1.5vw;
 }
@@ -120,58 +123,45 @@ nav a:hover{
 }
 
 .nav-menu {
-
     width: 100%;
     padding-top: 27vw;
     float: none;
     font-size: 1.4vw;
 }
 
-
-
 .revalHead {
     font-size: 2vw !important;
 }
-
 
 @keyframes slidy {
     0% {
         left: 0%;
     }
-
     20% {
         left: 0%;
     }
-
     25% {
         left: -100%;
     }
-
     45% {
         left: -100%;
     }
-
     50% {
         left: -200%;
     }
-
     70% {
         left: -200%;
     }
-
     75% {
         left: -300%;
     }
-
     95% {
         left: -300%;
     }
-
     100% {
         left: -400%;
     }
 }
-
 
 div#slider {
     overflow: hidden;
@@ -236,7 +226,6 @@ div#slider figure {
     padding: 1rem 2.5rem;
     height: 4rem;
     width: 40vw;
-
     margin-right: 13px;
     border-radius: 4px;
     border: none;
