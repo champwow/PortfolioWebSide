@@ -104,6 +104,10 @@ nav a:hover {
     padding: 1.5vw;
 }
 
+.slidebar-image-mibile {
+    width: 50%;
+}
+
 .image-100w {
     position: absolute;
     left: 0px;
@@ -133,31 +137,40 @@ nav a:hover {
     font-size: 2vw !important;
 }
 
+
 @keyframes slidy {
     0% {
         left: 0%;
     }
+
     20% {
         left: 0%;
     }
+
     25% {
         left: -100%;
     }
+
     45% {
         left: -100%;
     }
+
     50% {
         left: -200%;
     }
+
     70% {
         left: -200%;
     }
+
     75% {
         left: -300%;
     }
+
     95% {
         left: -300%;
     }
+
     100% {
         left: -400%;
     }
@@ -334,7 +347,7 @@ div#slider figure {
     text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
     transform: scale(1.4) translateZ(50px);
     transition: 0.25s;
-    margin-right: 1.5vw;
+    margin-right: 3vw;
 }
 
 .social__links ul li a span {
@@ -361,6 +374,57 @@ div#slider figure {
     .container {
         width: 88vw;
     }
+
+}
+
+@media only screen and (max-width: 770px) {
+    aside {
+        display: none;
+    }
+    .so-text{
+        display: none;
+    }
+    .subtitle{
+        font-size: 2vw;
+    }
+
+}
+@media only screen and (max-width: 300px) {
+   
+    .subtitle{
+        font-size: 5vw;
+    }
+
+}
+
+@media only screen and (min-width: 770px) {
+    .navbar-mobile {
+        display: none;
+    }
+
+}
+
+.navbar-mobile {
+    height: 100px;
+    background-color: #18122B; 
+}
+
+.navbar-mobile .navbar-brand {
+    text-align: center;
+    height: 100%;
+    display: inline-block;
+    width: 100%;
+    /* top: 50%; */
+    
+}
+.navbar-mobile .navbar-brand > .navbar-item,
+.navbar-mobile .navbar-brand .navbar-link {
+  display: inline-block;
+}
+
+.navbar-item img{
+    max-height: 100px;
+    top: 50%;
 }
 
 .columns.social {
