@@ -1,0 +1,55 @@
+body,
+html {
+    background: #443C68;
+    margin: 0;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    height: 100vh;
+}
+
+.hero-body {
+    background: #302555;
+}
+
+.card-content {
+    background: #18122B;
+    text-align: center;
+}
+
+.title-cardhead {
+    font-size: 3vw;
+    padding-bottom: 2vw;
+    color: aliceblue;
+    text-shadow: 6px 3px 2px #0c0916;
+}
+
+.title.big {
+    font-size: 7vw;
+    padding-bottom: 2vw;
+    color: aliceblue;
+    text-shadow: 6px 3px 2px #18122B;
+}
+
+.content {
+    color: aliceblue;
+    height: 100px;
+}
+
+.content h3 {
+    color: aliceblue;
+    font-size: 100%;
+    text-shadow: 6px 3px 2px #0c0916;
+}
+
+.content p {
+    font-size: 50%;
+}
+
+.card {
+    box-shadow: 0 0 10px 0 #000;
+    transition-duration: 400ms;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}

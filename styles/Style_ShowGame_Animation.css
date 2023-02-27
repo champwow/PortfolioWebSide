@@ -14,12 +14,14 @@ html {
     background: #18122B;
     text-align: center;
 }
-.title-cardhead{
+
+.title-cardhead {
     font-size: 3vw;
     padding-bottom: 2vw;
     color: aliceblue;
     text-shadow: 6px 3px 2px #0c0916;
 }
+
 .title.big {
     font-size: 7vw;
     padding-bottom: 2vw;
@@ -30,17 +32,16 @@ html {
 .article-body {
     color: aliceblue;
 }
-.article-body h3{
+
+.article-body h3 {
     color: aliceblue;
 }
-
 
 .image-one:hover {
     transform: scale(1.1);
     transition-duration: 500ms;
     cursor: pointer;
 }
-
 
 #myImg,
 .close {
@@ -94,7 +95,6 @@ html {
     from {
         -webkit-transform: scale(0)
     }
-
     to {
         -webkit-transform: scale(1)
     }
@@ -104,7 +104,6 @@ html {
     from {
         -moz-transform: scale(0)
     }
-
     to {
         -moz-transform: scale(1)
     }
@@ -114,7 +113,6 @@ html {
     from {
         -o-transform: scale(0)
     }
-
     to {
         -o-transform: scale(1)
     }
@@ -124,7 +122,6 @@ html {
     from {
         -ms-transform: scale(0)
     }
-
     to {
         -ms-transform: scale(1)
     }
@@ -134,7 +131,6 @@ html {
     from {
         transform: scale(0)
     }
-
     to {
         transform: scale(1)
     }
@@ -161,7 +157,10 @@ html {
         width: 100%
     }
 }
+
+
 /* ปุ่มกด */
+
 .butn:link,
 .butn:visited {
     display: inline-flex;
@@ -175,8 +174,6 @@ html {
     padding: 1rem 2.5rem;
     height: 4rem;
     width: 20vw;
-	
-
     margin-right: 13px;
     border-radius: 4px;
     border: none;
@@ -185,9 +182,11 @@ html {
     overflow: hidden;
     transition: all 0.3s ease-in-out;
 }
-.banner{
-	text-align: center;
+
+.banner {
+    text-align: center;
 }
+
 .butn:hover,
 .butn:active {
     transform: translateY(-3px);
