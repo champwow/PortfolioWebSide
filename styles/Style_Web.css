@@ -53,3 +53,30 @@ html {
     transform: scale(1.1);
     cursor: pointer;
 }
+.back:link,
+.back:visited {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #5e16bd;
+    background-image: linear-gradient(90deg, #501aa8, #870de8);
+    padding: 1rem 2.5rem;
+    height: 3rem;
+    width: 8vw;
+    margin-right: 13px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.butn:hover,
+.butn:active {
+    transform: translateY(-3px);
+    color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+}

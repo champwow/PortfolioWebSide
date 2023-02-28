@@ -92,6 +92,7 @@ nav a:hover {
 
 .text-title-name {
     text-shadow: 4px 2px 2px #18122B;
+    font-size: 2rem;
 }
 
 .center {
@@ -374,7 +375,9 @@ div#slider figure {
     .container {
         width: 88vw;
     }
-
+    .text-in-aboutme{
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (max-width: 770px) {
@@ -385,7 +388,10 @@ div#slider figure {
         display: none;
     }
     .subtitle{
-        font-size: 2vw;
+        font-size: 0.7rem;
+    }
+    .text-head-aboutme{
+        font-size: 2rem !important;
     }
 
 }
