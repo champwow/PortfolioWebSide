@@ -156,10 +156,18 @@ html {
     text-decoration: none;
     cursor: pointer
 }
-
+.image-list-mobile{
+    display: none;
+}
 @media only screen and (max-width:700px) {
     .modal-content {
         width: 100%
+    }
+    .image-list-desktop{
+        display: none;
+    }
+    .image-list-mobile{
+        display: flex;
     }
 }
 

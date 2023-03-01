@@ -370,7 +370,9 @@ div#slider figure {
 .social__links ul .github:hover {
     background: #333;
 }
-
+.dataaboutme{
+    margin: 20px;
+}
 @media only screen and (max-width: 549px) {
     .container {
         width: 88vw;
@@ -393,6 +395,7 @@ div#slider figure {
     .text-head-aboutme{
         font-size: 2rem !important;
     }
+    
 
 }
 @media only screen and (max-width: 300px) {
