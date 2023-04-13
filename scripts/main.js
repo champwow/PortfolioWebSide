@@ -13,8 +13,6 @@ function reveal() {
     const section = document.getElementById('hero');
 
     // Get the position of the section relative to the viewport
-    const rect = section.getBoundingClientRect();
-    console.log(revealsAboutMe.bottom);
 
     // Check if the section is currently visible in the viewport
     if (home.bottom >= 100 && home.top <= window.innerHeight) {
